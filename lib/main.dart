@@ -66,8 +66,7 @@ class _QuizPageState extends State<QuizPage> {
             ),
           ),
         ),
-        Expanded(
-          child: Padding(
+        Expanded(child: Padding(
             padding: EdgeInsets.all(15.0),
             child: FlatButton(
               color: Colors.red,
@@ -82,9 +81,21 @@ class _QuizPageState extends State<QuizPage> {
                 //The user picked false.
               },
             ),
-          ),
-        ),
-        //TODO: Add a Row here as your score keeper
+          ),),
+        Row(
+          children: [
+            Icon(
+              Icons.check,
+              color: Colors.green,
+            ),
+            Icon(
+              Icons.close,
+              color: Colors.red,
+            )
+          ],
+        )
+
+
       ],
     );
   }
